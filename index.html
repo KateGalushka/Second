@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffemaker</title>
+</head>
+<body>
+   
+    <script>
+        function showCupOfcoffee() {
+            let whatCoffee = +prompt('Яку чашку кави бажаєте? (1-маленьку, 2-середню, 3-велику)', 2);
+            switch (whatCoffee) {
+                case 1:
+                    document.write('<img src="pict/small cup.jpg" alt="Small cup" style="width:140px; height:150px">');
+                    break;
+                case 2:
+                    document.write('<img src="pict/medium cup.jpg" alt="Medium cup" style="width:250px; height:250px;">');
+                    break;
+                case 3:
+                    document.write('<img src="pict/large cup.jpg" alt="Large cup" style="width:390px; height:350px;">');
+                    break;
+                default:
+                    alert ("Ви не зробили вибір");
+            }
+        }
+        showCupOfcoffee();
+               
+    </script>
+</body>
+</html>
